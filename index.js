@@ -47,7 +47,7 @@ function wiktion_search(){
 // Main
 function main(){
     var Input          = location.search.replace("?q=","");
-    d$("#Input").value = Input;
+    d$("#Input").value = decodeURIComponent(Input);
 
     d$("#Google-Btn") .addEventListener("click", google_search);
     d$("#Camdict-Btn").addEventListener("click", camdict_search);
