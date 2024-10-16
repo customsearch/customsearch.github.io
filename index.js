@@ -49,13 +49,13 @@ function main(){
     var Input          = location.search.replace("?q=","");
     d$("#Input").value = Input;
 
-    d$("Google-Btn") .addEventListener("click", google_search);
-    d$("Camdict-Btn").addEventListener("click", camdict_search);
-    d$("Wordref-Btn").addEventListener("click", wordref_search);
+    d$("#Google-Btn") .addEventListener("click", google_search);
+    d$("#Camdict-Btn").addEventListener("click", camdict_search);
+    d$("#Wordref-Btn").addEventListener("click", wordref_search);
     
-    d$("Gtrans-Btn") .addEventListener("click", gtrans_search);
-    d$("Hvdic-Btn")  .addEventListener("click", hvdic_search);
-    d$("Wiktion-Btn").addEventListener("click", wiktion_search);
+    d$("#Gtrans-Btn") .addEventListener("click", gtrans_search);
+    d$("#Hvdic-Btn")  .addEventListener("click", hvdic_search);
+    d$("#Wiktion-Btn").addEventListener("click", wiktion_search);
 }
 
 window.onload = main;
