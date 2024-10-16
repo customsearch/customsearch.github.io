@@ -35,7 +35,7 @@ function gtrans_search(){
 // HV Dic
 function hvdic_search(){
     var Input = d$("#Input").value.trim();
-    window.location = `https://hvdic.thivien.net/hv/${Input}`;
+    window.location = `https://hvdic.thivien.net/whv/${Input}`;
 }
 
 // Wiktionary
