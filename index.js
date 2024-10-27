@@ -8,6 +8,12 @@ function d$$(Sel){
     return [...document.querySelectorAll(Sel)];
 }
 
+// Copilot
+function copilot_ask(){
+    var Input = d$("#Input").value.trim();
+    window.location = `https://copilot.microsoft.com?q=${Input}`;
+}
+
 // Google
 function google_search(){
     var Input = d$("#Input").value.trim();
@@ -49,6 +55,7 @@ function main(){
     var Input          = location.search.replace("?q=","");
     d$("#Input").value = decodeURIComponent(Input);
 
+    d$("#Copilot-Btn").addEventListener("click", copilot_ask);
     d$("#Google-Btn") .addEventListener("click", google_search);
     d$("#Camdict-Btn").addEventListener("click", camdict_search);
     d$("#Wordref-Btn").addEventListener("click", wordref_search);
